@@ -1,0 +1,104 @@
+
+//
+// Footer blocks
+// --------------------------------------------------
+
+.footer-blocks {
+	display: none;
+	background: #f2f2f2;
+	padding: 100px 0;
+	// background: fade(@brand-dark, 97%);
+	// color: lighten(@brand-dark, 24%);
+
+	// .panel-heading {
+	// 	color: lighten(@brand-dark, 24%);
+	// }
+}
+
+
+//
+// Footer
+// --------------------------------------------------
+
+.footer {
+	padding: @vertical-rhythm/2 0;
+	background: @brand-dark;
+	color: fade(#fff, 20%);
+	position: relative;
+
+	a,
+	a:focus {
+		color: fade(#fff, 30%);
+		background: none;
+
+		&:hover {
+			color: fade(#fff, 45%);
+		}
+	}
+
+	.social {
+		float: right;
+
+		a {
+			float: left;
+			margin-left: 10px;
+		}
+	}
+}
+
+.copyright {
+	margin: 0;
+	float: left;
+}
+
+
+// .social {
+// 	padding-left: @vertical-rhythm*2;
+
+// 	h4 {
+// 		margin: 0 0 @vertical-rhythm;
+// 	}
+
+// 	a {
+// 		font-size: 20px;
+// 		display: inline-block;
+// 		margin-right: @vertical-rhythm/2;
+// 		width: 28px;
+// 		height: 28px;
+// 		text-align: center;
+// 		line-height: 28px;
+// 		border-radius: 4px;
+// 		background: #bbb;
+
+// 		&:hover {
+// 			background: #afafaf;
+// 		}
+// 	}
+// }
+
+
+
+//
+// Back to top button
+// --------------------------------------------------
+
+.back-to-top,
+.back-to-top:focus {
+	float: right;
+	display: none;
+	// width: 30px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	background: #ccc;
+	color: #aaa;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		background: #bbb;
+	}
+}

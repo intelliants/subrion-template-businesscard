@@ -1,0 +1,90 @@
+
+//
+// Inventory
+// --------------------------------------------------
+
+.inventory {
+  background: @inventory-bg;
+  font-size: 12px;
+
+  .nav-inventory {
+    float: right;
+
+    > li {
+
+      > a {
+        &,
+        &:focus {
+          padding-top: 0;
+          padding-bottom: 0;
+          line-height: @inventory-height;
+          color: @inventory-link-color; 
+          background: none;
+          text-transform: none;
+          font-weight: normal;
+        }
+
+        &:hover {
+          color: @inventory-link-hover-color; 
+          background: none;
+        }
+      }
+
+      &.active > a,
+      &.active > a:focus,
+      &.active > a:hover {
+        color: @inventory-link-active-color; 
+        background: none;
+      }
+    }
+  }
+
+  &__info {
+    float: left;
+
+    > span {
+      font-size: 12px;
+      float: left;
+      color: @inventory-color;
+      line-height: @inventory-height;
+      padding: 0 15px 0;
+      border-left: 1px solid @inventory-border-color;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      > span {
+        margin-right: 5px;
+      }
+    }
+
+    @media (max-width: @screen-md) {
+      display: none;
+    }
+  }
+
+  .social {
+    float: right;
+    margin-left: @vertical-rhythm;
+
+    a {
+      &,
+      &:focus {
+        float: left;
+        text-decoration: none;
+        font-size: 16px;
+        color: @inventory-link-color;
+        text-align: center;
+        width: @inventory-height;
+        height: @inventory-height;
+        line-height: @inventory-height;
+        border-right: 1px solid @inventory-border-color;
+      }
+
+      &:hover {
+        color: @inventory-link-hover-color;
+      }
+    }
+  }
+}

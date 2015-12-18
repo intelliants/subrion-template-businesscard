@@ -6,8 +6,8 @@
 .box {
 
   &--border {
-    padding: 20px;
-    border: 1px solid #ddd;
+    padding: 0;
+    // border: 1px solid #ddd;
   }
 
   &--featured {
@@ -31,6 +31,12 @@
     .font-normalize(18px, 0);
     color: @box-caption-color;
     position: relative;
+    padding-bottom: @vertical-rhythm/2;
+    border-bottom: 2px solid @accent-color;
+
+    .minmax-toggle {
+    	margin-top: -20px;
+    }
   }
 
   &__content {

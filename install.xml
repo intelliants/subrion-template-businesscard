@@ -5,7 +5,7 @@
 	<author>Gleb Surinov</author>
 	<contributor>Intelliants LLC</contributor>
 	<version>1.0.0</version>
-	<date>2015-12-15</date>
+	<date>2015-12-18</date>
 	<compatibility>4.0</compatibility>
 
 	<layout>
@@ -33,6 +33,11 @@
 			<position width="3">footer4</position>
 		</section>
 	</layout>
+
+	<screenshots>
+		<screenshot name="1.jpg"><![CDATA[Home page - landing]]></screenshot>
+		<screenshot name="2.jpg"><![CDATA[Home page - default]]></screenshot>
+	</screenshots>
 
 	<configgroup name="template_businesscard">Template</configgroup>
 
@@ -137,7 +142,7 @@
 	<div class="container">
 		<div class="teaser">
 			<h1>We are here<br>at your service</h1>
-			<h2>Prominent slogan for your company can go here. You can change this text in <a href="./admin/">Admin Dashboard</a>.</h2>
+			<h2>Prominent slogan for your company can go here. You can change this text in <a href="admin/">Admin Dashboard</a>.</h2>
 		</div>
 	</div>
 </div>
@@ -229,28 +234,28 @@
 	<div class="row">
 		<div class="col-md-3">
 			<div class="b-entity b-entity--clear wow fadeInUp" data-wow-delay=".1s">
-				<div class="b-entity__image"><img src="./templates/businesscard/img/dummy/1.jpg" alt=""/></div>
+				<div class="b-entity__image"><img src="templates/businesscard/img/dummy/1.jpg" alt=""/></div>
 				<h3 class="b-entity__title">Professionals</h3>
 				<p>Service description or some text describing what you do. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sit fuga illum aut.</p>
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="b-entity b-entity--clear wow fadeInUp" data-wow-delay=".2s">
-				<div class="b-entity__image"><img src="./templates/businesscard/img/dummy/2.jpg" alt=""/></div>
+				<div class="b-entity__image"><img src="templates/businesscard/img/dummy/2.jpg" alt=""/></div>
 				<h3 class="b-entity__title">Responsibility</h3>
 				<p>Service description or some text describing what you do. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sit fuga illum aut.</p>
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="b-entity b-entity--clear wow fadeInUp" data-wow-delay=".3s">
-				<div class="b-entity__image"><img src="./templates/businesscard/img/dummy/3.jpg" alt=""/></div>
+				<div class="b-entity__image"><img src="templates/businesscard/img/dummy/3.jpg" alt=""/></div>
 				<h3 class="b-entity__title">Availability</h3>
 				<p>Service description or some text describing what you do. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sit fuga illum aut.</p>
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="b-entity b-entity--clear wow fadeInUp" data-wow-delay=".4s">
-				<div class="b-entity__image"><img src="./templates/businesscard/img/dummy/4.jpg" alt=""/></div>
+				<div class="b-entity__image"><img src="templates/businesscard/img/dummy/4.jpg" alt=""/></div>
 				<h3 class="b-entity__title">Work with us</h3>
 				<p>Service description or some text describing what you do. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sit fuga illum aut.</p>
 			</div>

@@ -19,7 +19,6 @@
 		<position>top</position>
 		<position>bottom</position>
 		<position>verybottom</position>
-		<position>copyright</position>
 
 		<section name="content">
 			<position fixed="1">left</position>
@@ -63,6 +62,12 @@
 		    name="website_bg" 
 		    type="image" 
 		    description="Header background"
+		    order="3004"><![CDATA[]]></config>
+
+	<config group="template_businesscard" 
+		    name="website_bg2" 
+		    type="image" 
+		    description="Header background 2"
 		    order="3004"><![CDATA[]]></config>
 
 	<config group="template_businesscard"
@@ -122,9 +127,11 @@
 
 	<changeset>
 		<menu position="account" status="active">account</menu>
+		<menu position="footer1" status="active" header="1" collapsible="0">bottom</menu>
 
 		<block status="active" classname="box--border">common_statistics</block>
 		<block status="active" classname="box--border">filters</block>
+		<block status="active" classname="box-landing-4" position="landing" order="4" title="Latest from the blog">blogroll</block>
 	</changeset>
 
 	<blocks>
@@ -282,7 +289,60 @@
 			No need to wait! Get in touch with us &rarr;
 		</div>
 		<div class="b-call__action">
-			<a href="#" class="btn btn-info">Contact us</a>
+			<a href="contacts/"><span class="fa fa-hand-o-right"></span> Contact us</a>
+		</div>
+	</div>
+</div>
+			]]>
+		</block>
+		<block name="landing5" 
+			   title="Get in touch" 
+			   position="landing"
+			   order="6" 
+			   header="1"
+			   collapsible="0" 
+			   classname="box-landing-5"
+			   sticky="0" 
+			   pages="index"
+			   status="active"
+			   type="smarty">
+			<![CDATA[
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h4>We are always glad to hear from you!</h4>
+			<p class="m-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere culpa, quam similique cupiditate est, ratione vero. Voluptas animi, minus alias ipsum deserunt laborum dolore libero eos. Non, quisquam, odit.</p>
+
+			<p class="addr"><span class="fa fa-map-pin"></span> {lang key='website_address'}</p>
+			<p class="addr"><span class="fa fa-phone"></span> {lang key='website_phone'}</p>
+			<p class="addr"><span class="fa fa-envelope"></span> <a href="mailto:info@website.com">info@website.com</a></p>
+		</div>
+		<div class="col-md-8">
+			<div class="bc-map" id="bc-map" data-addr="{lang key='website_address'}"></div>
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+		</div>
+	</div>
+</div>
+			]]>
+		</block>
+		<block name="landing6" 
+			   title="Want to work with us?" 
+			   position="landing"
+			   order="5" 
+			   header="0"
+			   collapsible="0" 
+			   classname="box-landing-6"
+			   sticky="0" 
+			   pages="index"
+			   status="active"
+			   type="smarty">
+			<![CDATA[
+<div class="box-landing-6__wrp" data-parallax="scroll" data-image-src="{if $core.config.website_bg2}{$smarty.const.IA_URL}uploads/{$core.config.website_bg2}{else}{$img}bg2.jpg{/if}">
+	<div class="box__caption">Want to work with us?</div>
+	<div class="box__content">
+		<div class="container">
+			<p class="box__tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aut nisi fugit assumenda pariatur quisquam, mollitia voluptas! Voluptas aperiam unde voluptatem iusto incidunt minus nulla, officiis eveniet non! Voluptas, blanditiis?
+			</p>
 		</div>
 	</div>
 </div>
@@ -354,7 +414,7 @@
 		</block>
 		<block name="footer1" 
 			   title="About CMS" 
-			   position="footer1" 
+			   position="footer2" 
 			   header="1"
 			   collapsible="0" 
 			   sticky="1" 
@@ -367,7 +427,7 @@ that allows you to build websites for any purpose. Yes, from blog to corporate m
 		</block>
 		<block name="footer2" 
 			   title="For users" 
-			   position="footer2" 
+			   position="footer3" 
 			   header="1"
 			   collapsible="0" 
 			   sticky="1" 
@@ -379,7 +439,7 @@ that allows you to build websites for any purpose. Yes, from blog to corporate m
 		</block>
 		<block name="footer3" 
 			   title="For developers" 
-			   position="footer3" 
+			   position="footer4" 
 			   header="1"
 			   collapsible="0" 
 			   sticky="1" 

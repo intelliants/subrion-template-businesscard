@@ -4,15 +4,40 @@
 // --------------------------------------------------
 
 .footer-blocks {
-	display: none;
-	background: #f2f2f2;
-	padding: 100px 0;
-	// background: fade(@brand-dark, 97%);
+	padding: @vertical-rhythm*2 0;
+	background: fade(@brand-dark, 95%);
+	color: fade(#fff, 50%);
 	// color: lighten(@brand-dark, 24%);
 
-	// .panel-heading {
-	// 	color: lighten(@brand-dark, 24%);
-	// }
+	.box {
+
+		&__caption {
+			color: @accent-color;
+			border-bottom: 0;
+			position: relative;
+
+			&::after {
+				display: block;
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 30px;
+				height: 2px;
+				background: @accent-color;
+			}
+		}
+
+		&__content {
+			color: fade(#fff, 50%);
+		}
+	}
+}
+
+.nav-footer {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -50,32 +75,6 @@
 	margin: 0;
 	float: left;
 }
-
-
-// .social {
-// 	padding-left: @vertical-rhythm*2;
-
-// 	h4 {
-// 		margin: 0 0 @vertical-rhythm;
-// 	}
-
-// 	a {
-// 		font-size: 20px;
-// 		display: inline-block;
-// 		margin-right: @vertical-rhythm/2;
-// 		width: 28px;
-// 		height: 28px;
-// 		text-align: center;
-// 		line-height: 28px;
-// 		border-radius: 4px;
-// 		background: #bbb;
-
-// 		&:hover {
-// 			background: #afafaf;
-// 		}
-// 	}
-// }
-
 
 
 //

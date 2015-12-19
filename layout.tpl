@@ -167,10 +167,10 @@
 			<div class="footer-blocks">
 				<div class="container">
 					<div class="row">
-						<div class="{width section='footer-blocks' position='footer1' tag='col-md-'}">{ia_blocks block='copyright'}</div>
-						<div class="{width section='footer-blocks' position='footer2' tag='col-md-'}">{ia_blocks block='footer1'}</div>
-						<div class="{width section='footer-blocks' position='footer3' tag='col-md-'}">{ia_blocks block='footer2'}</div>
-						<div class="{width section='footer-blocks' position='footer4' tag='col-md-'}">{ia_blocks block='footer3'}</div>
+						<div class="{width section='footer-blocks' position='footer1' tag='col-md-'}">{ia_blocks block='footer1'}</div>
+						<div class="{width section='footer-blocks' position='footer2' tag='col-md-'}">{ia_blocks block='footer2'}</div>
+						<div class="{width section='footer-blocks' position='footer3' tag='col-md-'}">{ia_blocks block='footer3'}</div>
+						<div class="{width section='footer-blocks' position='footer4' tag='col-md-'}">{ia_blocks block='footer4'}</div>
 					</div>
 				</div>
 			</div>

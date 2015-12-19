@@ -14,9 +14,23 @@
 			text-align: center;
 			text-transform: uppercase;
 			// font-weight: 400;
+			padding-bottom: 0;
 			border: none;
 			font-weight: bold;
 			.font-normalize(30px, 0 0 60px);
+			position: relative;
+
+			&::after {
+				display: block;
+				position: absolute;
+				content: '';
+				width: 100px;
+				height: 2px;
+				background: @accent-color;
+				bottom: -30px;
+				left: 50%;
+				margin-left: -50px;
+			}
 		}
 
 		&__content {
@@ -143,12 +157,162 @@
 	&__action {
 		float: right;
 
-		.btn {
-			// background: darken(@accent-color, 10%);
-			// border-color: darken(@accent-color, 15%);
-			text-transform: uppercase;
-			text-shadow: none;
+		a,
+		a:focus {
+			display: inline-block;
 			padding: 10px 30px;
+			text-transform: uppercase;
+			color: @brand-dark;
+			font-weight: bold;
+			border: 2px solid @brand-dark;
+			border-radius: 3px;
+			.transition(all .25s ease-in-out);
+		}
+
+		a:hover {
+			background: @brand-dark;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+//
+// Landing 4 / Blogroll
+// --------------------------------------------------
+
+.box-landing-4 {
+	background: #f2f2f2;
+}
+
+.b-card {
+	border: 1px solid #eee;
+	padding: 15px;
+	position: relative;
+	background: #fff;
+
+	&__image {
+		text-decoration: none;
+		display: block;
+		position: relative;
+
+		> img {
+			.img-responsive();
+		}
+	}
+
+	&__summary {
+		.opacity(0);
+		position: absolute;
+		left: 15px;
+		top: 15px;
+		right: 15px;
+		bottom: 15px;
+		background: fade(#000, 50%);
+		padding: 15px;
+		color: #fff;
+		margin: 0;
+		.transition(all .25s ease-in-out);
+	}
+
+	&:hover {
+		.b-card__summary {
+			background: fade(@accent-color, 50%);
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			.opacity(1);
+		}
+	}
+
+	&__title {
+		font-size: 16px;
+		line-height: 18px;
+		height: 36px;
+		overflow: hidden;
+		margin: 15px 0 0;
+
+		> a,
+		> a:focus {
+			color: @headings-color;
+		}
+	}
+
+	&__date {
+		font-size: 12px;
+		line-height: 16px;
+		color: fade(@text-color, 50%);
+		margin: 5px 0 0;
+	}
+}
+
+
+//
+// Landing 5
+// --------------------------------------------------
+
+.box-landing-5 {
+
+	.addr {
+		font-size: 18px;
+		position: relative;
+		padding-left: 60px;
+		padding-top: 8px;
+
+		+ .addr {
+			margin-top: 20px;
+		}
+
+		.fa {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			background: @accent-color;
+			border-radius: 50%;
+			border-bottom-right-radius: 0;
+			text-align: center;
+			color: darken(@accent-color, 30%);
+		}
+	}
+}
+
+.bc-map {
+	height: 300px;
+	border-radius: 3px;
+	overflow: hidden;
+	.box-shadow(0 0 35px rgba(0,0,0,.15));
+}
+
+
+
+//
+// Landing 6
+// --------------------------------------------------
+
+.box-landing-6 {
+	padding: 0 !important;
+
+	&__wrp {
+		padding: 160px 0;
+
+		.box__caption {
+			color: #fff;
+		}
+
+		.box__content {
+			color: #fff;
+		}
+
+		.box__tagline {
+			color: fade(#fff, 90%);
+			margin-bottom: 0;
+			font-size: 20px;
 		}
 	}
 }

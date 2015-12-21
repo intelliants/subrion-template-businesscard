@@ -47,7 +47,7 @@
 						<span><span class="fa fa-map-pin"></span> {lang key='website_address'}</span>
 						<span><span class="fa fa-phone"></span> {lang key='website_phone'}</span>
 					</div>
-					{if $core.config.website_social}
+					{if $core.config.website_social_header}
 						<div class="social">
 							{if $core.config.website_social_t}<a href="{$core.config.website_social_t}" class="twitter"><span class="fa fa-twitter"></span></a>{/if}
 							{if $core.config.website_social_f}<a href="{$core.config.website_social_f}" class="facebook"><span class="fa fa-facebook"></span></a>{/if}
@@ -184,7 +184,7 @@
 
 				<a href="#" class="back-to-top js-back-to-top" title="{lang key='back_to_top'}"><span class="fa fa-angle-up"></span></a>
 
-				{if $core.config.website_social}
+				{if $core.config.website_social_footer}
 					<div class="social">
 						{if $core.config.website_social_t}<a href="{$core.config.website_social_t}" class="twitter"><span class="fa fa-twitter"></span></a>{/if}
 						{if $core.config.website_social_f}<a href="{$core.config.website_social_f}" class="facebook"><span class="fa fa-facebook"></span></a>{/if}

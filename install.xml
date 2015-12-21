@@ -35,7 +35,6 @@
 
 	<screenshots>
 		<screenshot name="1.jpg"><![CDATA[Home page - landing]]></screenshot>
-		<screenshot name="2.jpg"><![CDATA[Home page - default]]></screenshot>
 	</screenshots>
 
 	<configgroup name="template_businesscard">Template</configgroup>

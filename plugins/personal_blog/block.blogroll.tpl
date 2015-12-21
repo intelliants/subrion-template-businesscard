@@ -25,7 +25,7 @@
 			{/foreach}
 		</div>
 	</div>
-	<p class="m-t text-center"><a href="{$smarty.const.IA_URL}blog/" class="btn btn-primary">{lang key='view_all_blog_entries'}</a></p>
+	<p class="m-t text-center"><a href="{$smarty.const.IA_URL}blog/" class="btn btn-warning">{lang key='view_all_blog_entries'}</a></p>
 </div>
 {else}
 	<div class="blogroll">

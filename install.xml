@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <template name="businesscard">
 	<title>BusinessCard</title>
-	<summary>Bootstrap 3 business template</summary>
+	<summary>Business template for company</summary>
 	<author>Gleb Surinov</author>
 	<contributor>Intelliants LLC</contributor>
 	<version>1.0.0</version>
-	<date>2015-12-18</date>
+	<date>2015-12-21</date>
 	<compatibility>4.0</compatibility>
 
 	<layout>

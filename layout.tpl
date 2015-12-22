@@ -70,7 +70,14 @@
 						</button>
 						<a class="navbar-brand{if !$core.config.enable_text_logo} navbar-brand--img{/if}" href="{$smarty.const.IA_URL}">
 							{if $core.config.enable_text_logo}
-								{$core.config.logo_text}
+								{$words = explode(' ', $core.config.logo_text)}
+								{foreach $words as $word}
+									{if !$word@last}
+										{$word} 
+									{else}
+										<span>{$word}</span>
+									{/if}
+								{/foreach}
 							{else}
 								{if !empty($core.config.site_logo)}
 									<img src="{$core.page.nonProtocolUrl}uploads/{$core.config.site_logo}" alt="{$core.config.site}">

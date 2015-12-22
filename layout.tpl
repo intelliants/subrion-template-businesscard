@@ -197,6 +197,8 @@
 			</div>
 		</footer>
 
+		<a href="#" class="back-to-top js-back-to-top"><span class="fa fa-arrow-up"></span></a>
+
 		<!-- SYSTEM STUFF -->
 
 		{if $core.config.cron}

@@ -48,11 +48,26 @@ $(function() {
 	}
 	
 	// back to top button
-	// $('.js-back-to-top').on('click', function(e){
-	// 	e.preventDefault();
+	var $button = $('.js-back-to-top'),
+		$window = $(window);
 
-	// 	$('html, body').animate({
-	// 		scrollTop: 0
-	// 	}, 'fast');
-	// });
+	$window.scroll(function() {
+		var pos = $window.scrollTop();
+
+		if (pos > 200) {
+			$button.addClass('is-visible');
+		} else {
+			$button.removeClass('is-visible');
+		}
+	});
+
+	$button.on('click', function(e){
+		e.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: 0
+		}, 'fast');
+
+		$button.removeClass('is-visible');
+	});
 });

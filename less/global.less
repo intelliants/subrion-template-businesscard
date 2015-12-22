@@ -144,3 +144,37 @@ body {
     }
   }
 }
+
+
+
+//
+// Back to top
+// --------------------------------------------------
+
+.back-to-top {
+  position: fixed;
+  right: -40px;
+  bottom: 30px;
+  font-size: 20px;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  background: @footer-bg;
+  border-radius: @border-radius-base;
+  .transition(all .15s ease-in-out);
+
+  &,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background: fade(@footer-bg, 90%);
+  }
+
+  &.is-visible {
+    right: 20px;
+  }
+}

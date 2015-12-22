@@ -5,7 +5,7 @@
 
 .footer-blocks {
 	padding: @vertical-rhythm*2 0;
-	background: fade(@brand-dark, 95%);
+	background: fade(@footer-bg, 95%);
 	color: fade(#fff, 50%);
 	// color: lighten(@brand-dark, 24%);
 
@@ -47,7 +47,7 @@
 
 .footer {
 	padding: @vertical-rhythm/2 0;
-	background: @brand-dark;
+	background: @footer-bg;
 	color: fade(#fff, 20%);
 	position: relative;
 
@@ -74,30 +74,4 @@
 .copyright {
 	margin: 0;
 	float: left;
-}
-
-
-//
-// Back to top button
-// --------------------------------------------------
-
-.back-to-top,
-.back-to-top:focus {
-	float: right;
-	display: none;
-	// width: 30px;
-	height: 24px;
-	font-size: 14px;
-	line-height: 24px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: center;
-	background: #ccc;
-	color: #aaa;
-	text-decoration: none;
-
-	&:hover {
-		text-decoration: none;
-		background: #bbb;
-	}
 }

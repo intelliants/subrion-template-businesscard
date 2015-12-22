@@ -8,8 +8,26 @@ $(function() {
 		container: 'body'
 	});
 
-	// map
+	// sticky nav
+	if($('.js-nav-sticky').length) {
+		var $window = $(window),
+			$navbar = $('.js-nav-sticky'),
+			$inventory = $('.inventory'),
+			navbarHeight = $navbar.outerHeight(),
+			navbarPos = $navbar.position();
 
+		$window.scroll(function () {
+			if($window.scrollTop() >= (navbarPos.top)) {
+				$navbar.addClass('is-sticky');
+				$inventory.css('margin-bottom', navbarHeight);
+			} else {
+				$navbar.removeClass('is-sticky');
+				$inventory.removeAttr('style');
+			}
+		});
+	}
+
+	// map on landing page in Get in touch block
 	if ($('.bc-map').length) {
 		// style: light
 		var styleLight = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#aabcc4"},{"visibility":"on"}]}];
@@ -32,15 +50,15 @@ $(function() {
 			geocoder = new google.maps.Geocoder();
 
 			geocoder.geocode({'address': address}, function(results, status) {
-			  if (status === google.maps.GeocoderStatus.OK) {
-			    map.setCenter(results[0].geometry.location);
-			    var marker = new google.maps.Marker({
-			      map: map,
-			      position: results[0].geometry.location
-			    });
-			  } else {
-			    alert('Geocode was not successful for the following reason: ' + status);
-			  }
+				if (status === google.maps.GeocoderStatus.OK) {
+					map.setCenter(results[0].geometry.location);
+					var marker = new google.maps.Marker({
+						map: map,
+						position: results[0].geometry.location
+					});
+				} else {
+					alert('Geocode was not successful for the following reason: ' + status);
+				}
 			});
 		}
 

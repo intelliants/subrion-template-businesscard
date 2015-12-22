@@ -58,29 +58,36 @@
 		    description="Enable landing page">1</config>
 
 	<config group="template_businesscard" 
-		    name="website_bg2" 
-		    type="image" 
-		    description="Work with us background"
-		    order="3004"><![CDATA[]]></config>
-
-	<config group="template_businesscard" 
 		    name="website_bg" 
 		    type="image" 
 		    description="Header background"
 		    order="3004"><![CDATA[]]></config>
 
+	<config group="template_businesscard" 
+		    name="website_bg2" 
+		    type="image" 
+		    description="Work with us background"
+		    order="3005"><![CDATA[]]></config>
+
 	<config group="template_businesscard"
 		    name="enable_text_logo" 
 		    type="radio"
-		    order="3005" 
+		    order="3006" 
 		    values="1,0" 
 		    description="Enable Logo text">0</config>
 	<config group="template_businesscard"
 			name="logo_text"
 		    type="text" 
-		    order="3006" 
+		    order="3007" 
 		    show="enable_text_logo|1" 
 		    description="Logo text">businesscard</config>
+
+	<config group="template_businesscard"
+		    name="sticky_nav" 
+		    type="radio"
+		    order="3008" 
+		    values="1,0" 
+		    description="Sticky Main Menu">0</config>
 
 	<config group="template_businesscard" 
 		    name="businesscard_divider2" 
@@ -96,28 +103,28 @@
 	<config group="template_businesscard"
 			name="website_social_header"
 		    type="radio" 
-		    order="3031"
+		    order="3032"
 		    values="1,0" 
 		    description="Show links in header">1</config>
 	<config group="template_businesscard"
 			name="website_social_t"
 		    type="text"
-		    order="3032"
+		    order="3033"
 		    description="Twitter Link">https://twitter.com/IntelliantsLLC</config>
 	<config group="template_businesscard"
 			name="website_social_f"
 		    type="text" 
-		    order="3033" 
+		    order="3034" 
 		    description="Facebook Link">https://www.facebook.com/Intelliants</config>
 	<config group="template_businesscard"
 			name="website_social_g"
 		    type="text" 
-		    order="3034" 
+		    order="3035" 
 		    description="Google+ Link">https://plus.google.com/102500660503219569194/posts</config>
 	<config group="template_businesscard"
 			name="website_social_i"
 		    type="text" 
-		    order="3035" 
+		    order="3036" 
 		    description="LinkedIn Link">#</config>
 
 	<config group="template_businesscard" 

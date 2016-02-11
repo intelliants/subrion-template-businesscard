@@ -40,7 +40,7 @@
 	</head>
 
 	<body class="page-{$core.page.name}">
-		<header class="header" data-parallax="scroll" data-image-src="{if $core.config.website_bg}{$smarty.const.IA_URL}uploads/{$core.config.website_bg}{else}{$img}bg3.jpg{/if}">
+		<header class="header" data-parallax="scroll" data-image-src="{if $core.config.website_bg}{$core.page.nonProtocolUrl}uploads/{$core.config.website_bg}{else}{$img}bg3.jpg{/if}">
 			<div class="inventory">
 				<div class="container">
 					<div class="inventory__info">

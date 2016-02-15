@@ -9,7 +9,7 @@
 		<meta name="description" content="{$core.page['meta-description']}">
 		<meta name="keywords" content="{$core.page['meta-keywords']}">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="generator" content="Subrion CMS {$core.config.version} - Open Source Content Management System">
+		<meta name="generator" content="Subrion CMS - Open Source Content Management System">
 		<meta name="robots" content="index">
 		<meta name="robots" content="follow">
 		<meta name="revisit-after" content="1 day">
@@ -73,7 +73,7 @@
 								{$words = explode(' ', $core.config.logo_text)}
 								{foreach $words as $word}
 									{if !$word@last}
-										{$word} 
+										{$word}
 									{else}
 										<span>{$word}</span>
 									{/if}

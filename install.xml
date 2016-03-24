@@ -92,7 +92,7 @@
 	<config group="template_businesscard"
 		    name="template_color_scheme"
 		    type="select"
-		    multiplevalues="default,green,red,purple"
+		    multiplevalues="default,green,red,purple,blue"
 		    description="Template color"
 		    order="3009">default</config>
 

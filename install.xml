@@ -97,6 +97,12 @@
 		    order="3009">default</config>
 
 	<config group="template_businesscard"
+		    name="template_gmaps_key"
+		    type="text"
+		    description="Google maps API key"
+		    order="3010">AIzaSyBif0PwIDwr025miPOz4jiUk_36xrRCj7w</config>
+
+	<config group="template_businesscard"
 		    name="businesscard_divider2"
 		    type="divider"
 		    order="3030">Social links</config>
@@ -334,7 +340,9 @@
 		</div>
 		<div class="col-md-8">
 			<div class="bc-map" id="bc-map" data-addr="{lang key='website_address'}"></div>
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key={$core.config.template_gmaps_key}&callback=mapInit">
+			</script>
 		</div>
 	</div>
 </div>
@@ -467,7 +475,7 @@ that allows you to build websites for any purpose. Yes, from blog to corporate m
 	</blocks>
 
 	<phrases>
-		<phrase category="frontend" key="website_address">22-76, 10th md, Bishkek, Kyrgyzstan</phrase>
+		<phrase category="frontend" key="website_address">22, 10th Microdistrict, Bishkek, Kyrgyzstan</phrase>
 		<phrase category="frontend" key="website_phone">+996 (312) 56-33-71</phrase>
 		<phrase category="frontend" key="back_to_top">Back to top</phrase>
 		<phrase category="frontend" key="register">Sign up</phrase>

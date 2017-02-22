@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<template name="businesscard">
+<module type="template" name="businesscard">
 	<title>BusinessCard</title>
 	<summary>Business template for company</summary>
 	<author>Gleb Surinov</author>
 	<contributor>Intelliants LLC</contributor>
 	<version>1.0.1</version>
 	<date>2015-12-21</date>
-	<compatibility>4.0</compatibility>
+	<compatibility>4.1.0</compatibility>
 
 	<layout>
 		<position menu="1" movable="0">account</position>
@@ -508,4 +508,4 @@ that allows you to build websites for any purpose. Yes, from blog to corporate m
 		<phrase category="frontend" key="back_to_top">Back to top</phrase>
 		<phrase category="frontend" key="register">Sign up</phrase>
 	</phrases>
-</template>
+</module>

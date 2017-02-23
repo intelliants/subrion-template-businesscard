@@ -7,7 +7,7 @@
 					<div class="b-card">
 						<a class="b-card__image" href="{$smarty.const.IA_URL}blog/{$one_blog_entry.id}-{$one_blog_entry.alias}">
 							{if $one_blog_entry.image}
-								{printImage imgfile=$one_blog_entry.image title="{$one_blog_entry.title|escape: html}"}
+								{ia_image file=$one_blog_entry.image title=$one_blog_entry.title}
 							{else}
 								<img src="{$img}no-blog-image.png" alt="">
 							{/if}

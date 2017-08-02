@@ -149,10 +149,10 @@
 	<changeset>
 		<menu position="account" status="active">account</menu>
 		<menu position="footer1" status="active" header="1" collapsible="0">bottom</menu>
-
 		<block status="active" classname="box--border">common_statistics</block>
 		<block status="active" classname="box--border">filters</block>
 		<block status="active" classname="box-landing-4" position="landing" order="99">blogroll</block>
+		<block status="active" classname="box-landing-7" position="landing" header="0" status="active" order="250">newsletters_subscription</block>
 	</changeset>
 
 	<blocks>
@@ -507,5 +507,7 @@ that allows you to build websites for any purpose. Yes, from blog to corporate m
 		<phrase category="frontend" key="website_phone">+996 (312) 56-33-71</phrase>
 		<phrase category="frontend" key="back_to_top">Back to top</phrase>
 		<phrase category="frontend" key="register">Sign up</phrase>
+		<phrase category="frontend" key="newsletters_caption">Get latest news and updates!</phrase>
+		<phrase category="frontend" key="newsletters_content">Subscribe to our email newsletter for useful information about our CMS. We won't bother you.</phrase>
 	</phrases>
 </module>

@@ -55,7 +55,9 @@
 							{if $core.config.website_social_i}<a href="{$core.config.website_social_i}" class="linkedin"><span class="fa fa-linkedin"></span></a>{/if}
 						</div>
 					{/if}
+					{include 'language-selector.tpl'}
 					{ia_blocks block='inventory'}
+					{include 'currency-selector.tpl'}
 				</div>
 			</div>
 			<nav class="navbar navbar-default{if $core.config.sticky_nav} js-nav-sticky{/if}">

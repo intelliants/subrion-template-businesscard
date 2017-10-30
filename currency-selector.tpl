@@ -1,5 +1,5 @@
 {if $core.config.currency_switch && count($core.currencies) > 1}
-    <ul class="nav-inventory pull-left" id="js-currencies-list">
+    <ul class="nav nav-inventory pull-left" id="js-currencies-list">
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 {$core.currency.title|escape} <span class="caret"></span>

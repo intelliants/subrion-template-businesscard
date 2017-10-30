@@ -92,7 +92,6 @@
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="navbar-collapse">
-						{include file='language-selector.tpl'}
 						{ia_blocks block='account'}
 						{ia_blocks block='mainmenu'}
 					</div>

@@ -133,7 +133,7 @@
 			name="website_social_g"
 		    type="text"
 		    order="3035"
-		    description="Google+ Link">https://plus.google.com/102500660503219569194/posts</config>
+		    description="Google+ Link">#</config>
 	<config group="template_businesscard"
 			name="website_social_i"
 		    type="text"
@@ -152,7 +152,8 @@
 		<block status="active" classname="box--border">common_statistics</block>
 		<block status="active" classname="box--border">filters</block>
 		<block status="active" classname="box-landing-4" position="landing" order="99">blogroll</block>
-		<block status="active" classname="box-landing-7" position="landing" header="0" status="active" order="250">newsletters_subscription</block>
+		<block status="active" classname="box-landing-7" position="landing" header="0" order="250">newsletters_subscription</block>
+		<block status="active" position="inventory">cart</block>
 	</changeset>
 
 	<blocks>
@@ -461,6 +462,20 @@ function mapInit() {
 			<![CDATA[
 <p>You can change this block in admin panel. Remember, if you change template, this block will be lost. We advise you to clone this block.</p>
 <p>Ne lorem percipit efficiantur mei, ius ut simul vidisse. An vel probatus explicari appellantur. Has et comprehensam interpretaris, quo no inimicus maluisset temporibus. Ea mea quod.</p>
+			]]>
+		</block>
+		<block name="block_for_ad"
+			   title="Block for ad"
+			   position="left"
+			   header="0"
+			   collapsible="0"
+			   sticky="1"
+			   status="active"
+			   order="1"
+			   type="html"
+			   classname="box--border block_for_ad">
+			<![CDATA[
+<p>You can place advertisement block here.</p>
 			]]>
 		</block>
 		<block name="footer1"

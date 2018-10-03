@@ -97,12 +97,6 @@
 		    order="3009">default</config>
 
 	<config group="template_businesscard"
-		    name="template_gmaps_key"
-		    type="text"
-		    description="Google maps API key"
-		    order="3010">AIzaSyBif0PwIDwr025miPOz4jiUk_36xrRCj7w</config>
-
-	<config group="template_businesscard"
 		    name="businesscard_divider2"
 		    type="divider"
 		    order="3030">Social links</config>
@@ -370,7 +364,7 @@ function mapInit() {
 }
 			</script>
 			<script async defer
-				src="https://maps.googleapis.com/maps/api/js?key={$core.config.template_gmaps_key}&callback=mapInit">
+				src="https://maps.googleapis.com/maps/api/js?{if $core.config.maps_api_key}key={$core.config.maps_api_key}&{/if}callback=mapInit">
 			</script>
 		</div>
 	</div>
